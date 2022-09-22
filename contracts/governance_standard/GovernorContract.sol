@@ -25,7 +25,7 @@ contract GovernorContract is
         TimelockController _timelock,
         uint256 _votingDelay,
         uint256 _votingPeriod,
-        uint256 _quorumPercentage
+        uint256 _quorumPercentage // Welcher anteil an Personen (Token) mindestens nötig ist
     )
         Governor("GovernorContract")
         GovernorSettings(
