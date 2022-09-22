@@ -31,10 +31,10 @@ const deployGovernanceToken: DeployFunction = async (
         await verify(governanceToken.address, []);
     }
     log("Governance Token deployed!");
-    log("---------------------------------------------");
 
     await delegate(governanceToken.address, deployer);
     log("Delegated!");
+    log("---------------------------------------------");
 };
 
 const delegate = async (
